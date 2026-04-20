@@ -20,7 +20,7 @@ ssl_ca = os.getenv("DB_SSL_CA", "").strip()
 
 if ssl_mode:
     pool_config["ssl_disabled"] = False
-    pool_config["ssl_verify_cert"] = ssl_mode.upper() in {"VERIFY_CA", "VERIFY_IDENTITY", "REQUIRED"}
+    pool_config["ssl_verify_cert"] = ssl_mode.upper() in {"VERIFY_CA", "VERIFY_IDENTITY"}
     pool_config["ssl_verify_identity"] = ssl_mode.upper() == "VERIFY_IDENTITY"
 
 if ssl_ca:
