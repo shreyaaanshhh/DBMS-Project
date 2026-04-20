@@ -1,3 +1,3 @@
 window.APP_CONFIG = {
-  apiBaseUrl: "http://localhost:5000"
+  apiBaseUrl: "https://dbms-project-e4cf.onrender.com/"
 };
